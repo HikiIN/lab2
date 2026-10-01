@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2.2 — Варіант 20</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7fafc; margin: 40px; }
+        .box { max-width: 500px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        button { margin-top: 20px; width: 100%; padding: 10px; background: #38a169; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+        button:hover { background: #2f855a; }
+        a { display: inline-block; margin-top: 15px; color: #38a169; }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Завдання 2.2: Табулювання функції</h2>
+    <p>Функція: <b>y = x / (1 - tg(x))</b></p>
+    <form action="task2" method="POST">
+        <label for="a">Початок інтервалу a:</label>
+        <input type="text" id="a" name="a" value="0.0" required>
+
+        <label for="b">Кінець інтервалу b (наприклад, 0.7):</label>
+        <input type="text" id="b" name="b" value="0.7" required>
+
+        <label for="h">Крок h:</label>
+        <input type="text" id="h" name="h" value="0.05" required>
+
+        <button type="submit">Табулювати та побудувати графік</button>
+    </form>
+    <a href="index.html">&larr; До вибору завдань</a>
+</div>
+</body>
+</html>
